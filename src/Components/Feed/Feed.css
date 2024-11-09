@@ -1,0 +1,67 @@
+.feed{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-column-gap: 16px;
+  grid-row-gap: 30px;
+  margin-top: 15px;
+}
+.feed .card img{
+  width: 100%;
+  border-radius: 5px;
+}
+.feed .card h2{
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  margin: 5px 0;
+}
+.feed .card h3{
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    margin: 6px 0;
+}
+.feed .card p{
+    font-size: 12px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .feed {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 12px;
+    grid-row-gap: 20px;
+  }
+
+  .feed .card h2 {
+    font-size: 13px;
+  }
+
+  .feed .card h3 {
+    font-size: 12px;
+  }
+
+  .feed .card p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feed {
+    grid-template-columns: 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 15px;
+  }
+
+  .feed .card h2 {
+    font-size: 12px;
+  }
+
+  .feed .card h3 {
+    font-size: 11px;
+  }
+
+  .feed .card p {
+    font-size: 10px;
+  }
+}

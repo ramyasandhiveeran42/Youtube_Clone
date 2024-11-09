@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #a5a5a5;
+}
+img{
+  cursor: pointer;
+}
+.flex-div{
+  display: flex;
+  align-items: center;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .flex-div {
+    flex-direction: column;
+    align-items: flex-start; /* Align to the left for better readability on smaller screens */
+    gap: 10px; /* Add some spacing between items */
+  }
+}
+
+@media (max-width: 480px) {
+  .flex-div {
+    gap: 8px; /* Slightly reduce gap for very small screens */
+  }
+}

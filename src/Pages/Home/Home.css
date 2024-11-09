@@ -1,0 +1,40 @@
+.container{
+    background-color: #f9f9f9;
+    padding-left: 17%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.large-container{
+    padding-left: 7%;
+}
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 10%;
+        padding-right: 3%;
+    }
+
+    .large-container {
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .large-container {
+        padding-left: 3%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container,
+    .large-container {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
